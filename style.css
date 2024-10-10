@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 80px;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+
+.navlinks {
+    list-style: none;
+    font-family: 'Nunito sans';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.navlinks li{
+    display: inline-block;
+    transition: all 0.3s;
+    color: white;
+}
+
+.navlinks li:hover{
+    transform: translateY(-4px);
+    text-decoration: underline;
+}
+
+.logo {
+    font-family: 'League Spartan';
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#profile{
+    transform: scale(2);
+    margin-right: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#profile:hover {
+    filter: drop-shadow(0px 5px 5px grey);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: drop-shadow(0px 5px 3px grey);
+    z-index: 1;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: #478CCF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.chatbot:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.chatbot img{
+    height: 60px;
+    width: auto;
+    filter: invert(1);
+    margin-bottom: 5px;
+}
+
+.hambur span{
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.hambur {
+    position: absolute;
+    padding: 5px;
+    right: 60px;
+    transition: all 0.3s;
+    display: none;
+}
+
+
+.hamactive {
+    background-color: #478CCF;
+    border-radius: 50%;
+}
+
+hr{
+    margin-top: 20px;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Nunito sans';
+}
+
+header h2{
+    font-size: 2.5rem;
+}
+
+header p{
+    font-size: 1.5rem;
+    color: #666;
+}
+
+section {
+    margin-top: 50px;
+    font-family: 'Nunito sans';
+    border-radius: 25px;
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    float: left;
+    background-color: #6fa9e4;
+    padding: 20px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+aside ul{
+    list-style-type: none;
+}
+
+aside li{
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+aside a{
+    color: white;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+article {
+    width: 80%;
+    float: left;
+    background-color: #E9EFEC;
+    padding: 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+article h3{
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+
+article p{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.nat_mus{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.nat_mus img{
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.imgcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+}
+
+.imgcontainer p{
+    text-align: center;
+    color: #666;
+}
+
+.his_imgs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.his_imgs img{
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 400px;
+    width: auto;
+}
+
+.colcontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.colcontainer img{
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.colcontainer p{
+    color: #666;
+}
+
+.colimgtext{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.more_links{
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.gotopbtn{
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    opacity: 0.5;
+    transition: all 0.5s;
+    display: none;
+}
+
+.gotopbtn a{
+    background-color: #478CCF;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Nunito sans';
+    color: white;
+    text-decoration: none;
+}
+
+.gotopbtn:hover{
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+@media (max-width:700px){
+
+    body{
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    #profile {
+        transform: scale(1.5);
+        margin-right: 20px;
+    }
+
+    .hambur {
+        display: block;
+    }
+
+    
+    .navlinks {
+        flex-direction: column;
+        position: absolute;
+        background-color: #478CCF;
+        padding: 20px;
+        width: 300px;
+        transition: all 0.5s;
+        right: 0;
+        top: 70px;
+        transform: translateX(400px);
+    }
+
+    .navbar {
+        width: 100vw;
+    }
+
+    
+
+    .active {
+        transform: translateX(0px);
+        
+    }
+
+    
+
+    .navlinks li{
+        padding: 20px;
+    }
+
+    .navlinks a{
+        color: white;
+    }
+
+    header{
+        margin-top: 30px;
+    }
+
+    aside{
+        width: 100%;
+        float: none;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 0px;
+    }
+
+    article{
+        border-top-right-radius: 0px;
+        width: 100%;
+    }
+
+
+    section{
+        width: 100%;
+        float: none;
+        display: block;
+    }
+
+    aside li{
+        margin: 20px;
+    }
+
+    .nat_mus img{
+        width: 100%;  
+    }
+
+    .his_imgs img{
+        width: 100%;
+        height: auto;
+    }
+
+    .colcontainer img{
+        width: 100%;
+        height: auto;
+    }
+
+
+}
