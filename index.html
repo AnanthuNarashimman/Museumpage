@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <select class="langselect">
+        <option value="en">English</option>
+        <option value="ta">Tamil</option>
+        <option value="hi">Hindi</option>
+    </select>
+
     <div class="chatbot">
         <img src="robot.png">
         </div>
         <div class="navbar">
             <p class="logo">Chat&Book</p>
     
-            <ul class="navlinks">
+            <ul class="navlinks"> 
                 <li class="home"><a href="">Home</a></li>
                 <li class="museums" style="text-decoration: underline;"><a href="">Museums</a></li>
                 <li class="btickets"><a href="">Book Tickets</a></li>
@@ -37,27 +44,27 @@
         </div>
 
         <header>
-            <h2 id="top">National Museum</h2>
-            <p><i class="fa-solid fa-location-dot"></i> Delhi</p>
+            <h2 id="top" class="musname">National Museum</h2>
+            <p><i class="fa-solid fa-location-dot" ></i><span class="location">Delhi</span></p>
         </header>
 
         <section>
             <aside>
                 <ul class="asd_links">
-                    <li><a href="#introduction">Introduction</a></li>
-                    <li><a href="#history">History</a></li>
-                    <li><a href="#colexb">Collections and Exhibitions</a></li>
-                    <li><a href="#intexb">International Exhibitions</a></li>
-                    <li><a href="#wshop">Workshops</a></li>
-                    <li><a href="#archbeauty">Architectural beauty</a></li>
-                    <li><a href="#visit">Plan Your visit</a></li>
-                    <li><a href="#more">More information</a></li>
+                    <li><a href="#introduction" class="asd_head">Introduction</a></li>
+                    <li><a href="#history" class="asd_head">History</a></li>
+                    <li><a href="#colexb" class="asd_head">Collections and Exhibitions</a></li>
+                    <li><a href="#intexb" class="asd_head">International Exhibitions</a></li>
+                    <li><a href="#wshop" class="asd_head">Workshops</a></li>
+                    <li><a href="#archbeauty" class="asd_head">Architectural beauty</a></li>
+                    <li><a href="#visit" class="asd_head">Plan Your visit</a></li>
+                    <li><a href="#more" class="asd_head">More information</a></li>
                 </ul>
             </aside>
 
             <article>
-                <h3 id="introduction">Introduction</h3>
-                <p>The National Museum, New Delhi, is one of the largest and most prestigious museums in India, offering 
+                <h3 id="introduction" class="heading">Introduction</h3>
+                <p class="content_section">The National Museum, New Delhi, is one of the largest and most prestigious museums in India, offering 
                     a rich and immersive journey through the country's history, culture, and heritage. Established in 
                     1949, the museum is located on Janpath and houses over 200,000 artifacts covering more than 5,000 
                     years of history. It serves as a treasure trove of India's cultural wealth, with collections that 
@@ -80,8 +87,8 @@
 
                     <hr>
 
-                    <h3 id="history">History</h3>
-                    <p>The National Museum in New Delhi, established in 1949, is one of the largest and most important 
+                    <h3 id="history" class="heading">History</h3>
+                    <p class="content_section">The National Museum in New Delhi, established in 1949, is one of the largest and most important 
                         museums in India, offering a rich collection that spans over 5,000 years of Indian history. Its 
                         origins trace back to an exhibition of Indian artifacts organized at the Royal Academy in London 
                         in 1947. Impressed by its success, the Government of India decided to showcase the collection in 
@@ -100,24 +107,24 @@
                         <div class="his_imgs">
                             <div class="imgcontainer">
                                 <img src="nat_mus_inaugration.jpg" loading="lazy">
-                                <p>Inauguration Day, December 18, 1960 । Source: Prof. Kavita Singh, Facebook</p>
+                                <p class="img_description">Inauguration Day, December 18, 1960 । Source: Prof. Kavita Singh, Facebook</p>
                             </div>
                             <div class="imgcontainer">
                                 <img src="nat_mus_nehru.jpg" loading="lazy">
-                                <p>Jawaharlal Nehru enters the museum for the first time, on its inauguration day, December 18, 1960. 
+                                <p class="img_description">Jawaharlal Nehru enters the museum for the first time, on its inauguration day, December 18, 1960. 
                                     । Source: Prof. Kavita Singh, Facebook
                                 </p>
                             </div>
                             <div class="imgcontainer">
                                <img src="nat_mus_past.jpg" loading="lazy">
-                               <p>The newly completed National Museum, 1960 । Source: Prof. Kavita Singh, Facebook</p> 
+                               <p class="img_description">The newly completed National Museum, 1960 । Source: Prof. Kavita Singh, Facebook</p> 
                             </div>
                         </div>
 
                         <hr>
 
-                        <h3 id="colexb">Collections ans Exhibits</h3>
-                        <p>The National Museum in Delhi boasts an extensive and diverse collection that showcases the 
+                        <h3 id="colexb" class="heading">Collections ans Exhibits</h3>
+                        <p class="content_section">The National Museum in Delhi boasts an extensive and diverse collection that showcases the 
                             rich tapestry of India's cultural heritage, with over 200,000 artifacts spanning several 
                             millennia. Its collection is organized into multiple galleries, each dedicated to different 
                             aspects of Indian history and culture. The museum houses remarkable relics from the Indus 
@@ -141,26 +148,26 @@
                             <div class="colcontainer">
                                 <div class="colimgtext">
                                     <img src="nat_mus_archeo.jpeg" loading="lazy">
-                                    <p>Archeology</p>
+                                    <p class="img_description">Archeology</p>
                                 </div>
                                 <div class="colimgtext">
                                     <img src="nat_mus_paintings.jpeg" loading="lazy">
-                                    <p>Paintings</p>
+                                    <p class="img_description">Paintings</p>
                                 </div>
                                 <div class="colimgtext">
                                     <img src="nat_mus_jewel.jpeg" loading="lazy">
-                                    <p>Jewelry</p>
+                                    <p class="img_description">Jewelry</p>
                                 </div>
                                 <div class="colimgtext">
                                     <img src="nat_mus_prehistoric.jpeg" loading="lazy">
-                                    <p>Pre-historic Archeology</p>
+                                    <p class="img_description">Pre-historic Archeology</p>
                                 </div>
                             </div>
 
                             <hr>
 
-                            <h3 id="intexb">International Exhibits</h3>
-                            <p>The National Museum in Delhi is not only a custodian of India's rich cultural heritage but 
+                            <h3 id="intexb" class="heading">International Exhibits</h3>
+                            <p class="content_section">The National Museum in Delhi is not only a custodian of India's rich cultural heritage but 
                                 also a significant player in the global museum landscape, hosting various international 
                                 exhibitions that foster cross-cultural dialogue and appreciation of art. These 
                                 exhibitions often feature renowned artifacts and artworks from prestigious institutions 
@@ -179,7 +186,7 @@
                                 histories. By hosting these exhibitions, the National Museum plays a crucial role in 
                                 creating a dialogue between cultures and facilitating a greater appreciation for the 
                                 artistic achievements of different societies, ultimately reinforcing its mission to be 
-                                a hub of knowledge and cultural exchange.<br>To know about ongoing international 
+                                a hub of knowledge and cultural exchange.</p><p class="link_section">To know about ongoing international 
                                 exhibits <a href="https://www.nationalmuseumindia.gov.in/en/exhibitions/index/9/ongoing" target="_blank">Click here </a>
                                 or ask our chatbot.
                             </p>
@@ -187,8 +194,8 @@
 
                             <hr>
 
-                            <h3 id="wshop">Workshops</h3>
-                            <p>The National Museum in Delhi conducts a wide range of workshops aimed at fostering 
+                            <h3 id="wshop" class="heading">Workshops</h3>
+                            <p class="content_section">The National Museum in Delhi conducts a wide range of workshops aimed at fostering 
                                 creativity, education, and awareness about India's rich cultural heritage. These 
                                 workshops cater to diverse audiences, from schoolchildren and students to scholars and 
                                 art enthusiasts. Programs include traditional crafts, painting, sculpture, calligraphy, 
@@ -202,15 +209,15 @@
                                 institutions and art councils, adding a global perspective to the learning experience. 
                                 These workshops play a vital role in bridging the gap between the public and historical 
                                 artifacts, encouraging active participation in preserving and appreciating cultural 
-                                traditions.<br>To know about current workshops and certification courses 
+                                traditions.</p><p class="link_section">To know about current workshops and certification courses 
                                 <a href="https://www.nationalmuseumindia.gov.in/en/nm-short-term-courses#" target="_blank">Click here</a> 
                                 or ask our chatbot.</p>
 
 
                                 <hr>
 
-                                <h3 id="archbeauty">Architectural  beauty</h3>
-                                <p>The architectural beauty of the National Museum in Delhi is a harmonious blend of 
+                                <h3 id="archbeauty" class="heading">Architectural  beauty</h3>
+                                <p class="content_section">The architectural beauty of the National Museum in Delhi is a harmonious blend of 
                                     traditional and modern design elements, reflecting India's rich cultural heritage 
                                     and its journey into the modern era. The museum's sprawling structure, located on 
                                     Janpath, is spread across three floors and is built in a classic Indo-modernist 
@@ -231,8 +238,8 @@
 
                                     <hr>
 
-                                    <h3 id="visit">Plan your visit</h3>
-                                    <p>Planning your visit to the National Museum is easy! The museum is open all days 
+                                    <h3 id="visit" class="heading">Plan your visit</h3>
+                                    <p class="content_section">Planning your visit to the National Museum is easy! The museum is open all days 
                                         except Mondays and national holidays. It is located on Janpath, near Connaught 
                                         Place, making it accessible by public transport, including metro, buses, and 
                                         taxis. The museum offers a variety of exhibits spread across multiple floors, 
@@ -256,8 +263,8 @@
 
                                         <hr>
 
-                                        <h3 id="more">More information</h3>
-                                        <p>If you're looking to explore more about the National Museum, including its 
+                                        <h3 id="more" class="heading">More information</h3>
+                                        <p class="content_section">If you're looking to explore more about the National Museum, including its 
                                             detailed history, collections, upcoming events, and visitor information, 
                                             feel free to check the following links:<br>
                                             <ul class="more_links">
